@@ -1,0 +1,46 @@
+body {
+  background-image: url('onepage1.jpeg');
+    font-family: Helvetica, sans-serif;
+    color: white;
+} 
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+  margin: 80;
+  padding: 80;
+  overflow: hidden;
+  background-color: #FF69B4;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 40px 42px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #333;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
