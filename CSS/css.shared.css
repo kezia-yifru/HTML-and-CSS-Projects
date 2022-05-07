@@ -1,12 +1,7 @@
-/*---------------------------------
-Author: Kezia 
------------------------------------*/
-
-html
 {
  font-family: sans-serif;
  font-size:   62.5%;
--webkit-top-highlight-color: rgba(0, 0, 0, 0);
+-webkit-top-highlight-color: rgba(0,0,0,0);
 -webkit-text-size-adjust: 100%;
 -ms-text-size-adjust: 100%;
 } 
@@ -20,8 +15,8 @@ body {
     background:#fff;
 }
 
- footer,
- nav {
+ footer.
+nav {
     display:block;
 } 
 
@@ -35,19 +30,9 @@ h1 {
  font-size: 30px;
  text-transform: uppercase;
  text-align: center;
- color: #e91c1c;
+ color: #e9e9e9;
  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-} 
-
-h1::after { /*This is the underline*/
-display: block;
-content: --; 
-height: 2px;
-width: 150px;
-background: #E91C1C;
-margin: 5px auto 40px;
-box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
-} 
+}
 
 h2 {
     line-height: 50px;
@@ -55,7 +40,7 @@ h2 {
 }
 
 h3 {
-    line-height: 30px;
+    line-height: 50px;
     padding-bottom:20px;
 }
 
@@ -78,10 +63,10 @@ p {
 }
 
 .heading-padding {
-    padding-bottom: 40px;
+    padding-bottom: 40px
 }
 
-section {
+.section {
    padding-top: 50px;
    margin-top:50px; 
 }
@@ -89,7 +74,7 @@ section {
 .navbar {
     height: 105px;
     max-height:340px;
-    display: block;
+
 }
 
 .container {
@@ -116,13 +101,13 @@ section {
 .navbar:after {
     clear:both;
     display:table;
-    content: - -;
+    content:"";
 }
 
 .wrap {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position:absolute;
     /*This ensures that the images cannot
     render outside of their container without
     forcing any scrollbar*/
@@ -135,12 +120,11 @@ section {
 .menu-container {
     max-height: 340px;
     margin: 0% auto;
-    content: - -;
+    content: "";
     /*top:0;
     left:0;*/
     /*position:absolute;*/ /*to the top edge of the screen*/
     width:100%;
-    position: fixed;
     z-index:100;
     /*background color rgba(255,255,255,0.5);*/    
 }
@@ -149,7 +133,7 @@ section {
 HOME SECTION STYLES
 --------------------------------------------*/
 #home {
-    background:url(./images/blackbackground.jpg) no-repeat 50% 50%;
+    background:url(Project/images/Thumb/fruits.jpg) no repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size:  cover;
@@ -171,7 +155,7 @@ HOME SECTION STYLES
     word-spacing: 21pt;
     font-size: 4.5em;
     text-align: left;
-    font-family: impact, sans-serif;
+    font-family: Impact, sans-serif;
     line-height: 2;
     font-weight: 900;
     border: 5px double #fff;
@@ -187,7 +171,7 @@ HOME SECTION STYLES
 
 .head-last {
     font-size: 10px;
-    font-weight: 900;
+    font-weight: 500;
     padding: 5px 20px 20px 20px;
     border: 1px dotted #fff;
     padding: 5px;
@@ -211,16 +195,16 @@ Contact STYLES
     background-color: #f5f3f3;
 } 
 
-.contact {
-    width: 60%; 
+.reservation {
+    width: 60% 
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100,65,0..3);
-    text-shadow: -1px -1px 1px 0 rgba(0,0,0,0.5), 1px 2px 10px 0 rgba(0,0,0,0.5);
+    background-color: rgba (100,65,0..3);
+    text-shadow: -1px -1px 1px 0 rgba(0,0,0,0.5);
 } 
 
-.contact h2 {
+.reservation h2 {
     width: 70%;
     text-align: center;
     margin: 0 auto; 
@@ -231,7 +215,7 @@ Contact STYLES
     word-spacing: 0pt;
 } 
 
-.contact h2 span {
+.reservation h2 span {
     width: 70%;
     text-align: center;
     margin: 0 auto;
@@ -243,18 +227,18 @@ Contact STYLES
     word-spacing: .3pt;
 } 
 
-.contact p {
+.reservation p {
     color:#13161B; 
     width: 50%;
     margin: 0 auto; 
 } 
 
-.contact form {
+.reservation form {
     font-size: 15px;
     outline: none; 
     font-weight: 600;
     color: #8D8E8f; 
-    padding: 2% 1% 2% 7%;
+    padding: 12px 12px;
     width: 70%;
     border: 1px solid #808080;
     margin: 2% auto;
@@ -264,7 +248,7 @@ Contact STYLES
     font-family: 'Raleway', sans-serif;
 } 
 
-.contact input [type="text"] {
+.reservation input [type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
@@ -282,7 +266,7 @@ Contact STYLES
     font-family: 'Raleway', sans-serif;
 } 
 
-.contact input [type="text"]:hover {
+.reservation input [type="text"]:hover {
     box-shadow: 0 0 18px rgba (100,65,0,.8);
 } 
 
@@ -300,7 +284,7 @@ Contact STYLES
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-weight: 600; 
-    position:relative;
+    position: relative;
     display: inline;
     float: right;
 }
@@ -322,7 +306,7 @@ Contact STYLES
     padding: 7px 0px;
     width: 25%;
     font-size: 18px;
-    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    transition: border-color 0.3s background-color 0.3s;
     border-radius: 7px;
     background-color: #797a7b;
     box-shadow: 1px 1px 4px 0 rgba (0,0,0,0.3);
@@ -330,7 +314,7 @@ Contact STYLES
 
 .submit input [type="submit"]:hover {
     color: #000; 
-    background-color: #8D8E8f;
+    background-color: #000;
     box-shadow:inset 1px 2px 15px 0 rgba (0,0,0,0.5); 
 }
 
@@ -345,3 +329,32 @@ FOOTER STYLES
     text-align: right;
 } 
 
+/*-----------------------------------------------
+@MEDIA QUERIES
+----------------------------------------------*/
+@media all and (max-width:640px] and (min-width:200px) {
+        .head-main {
+            font-size: 20px ;
+        } 
+} 
+@media all and (max-width:381px) and (min-width:200px) {
+    .head-main {
+        font-size: 24px ;
+    }
+} 
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+} 
+@media (min-width: 992px) {
+    .container {
+        width: 970px
+    }
+} 
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px
+    }
+} 

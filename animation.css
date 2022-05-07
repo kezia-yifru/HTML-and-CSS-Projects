@@ -32,7 +32,7 @@ MENU SECTION ANIMATION
 
 .menu li:hover {
     color: #f00;
-    background-color: rgba(100,65,0,.5);
+    background-color: rgba(100,65,0,.3);
 } 
 
 /*------------------------------------------
@@ -54,13 +54,13 @@ GALLERY SECTION ANIMATION
     text-align: center;
     margin: 15px auto;
     width: 300px;
-    height: 16%px;
+    height: 169px;
 } 
 
 .photo-container img {
     max-width: 100%;
     width: 300px;
-    height: 16%px;
+    height: 169px;
 } 
 
 .photo-overlay {
