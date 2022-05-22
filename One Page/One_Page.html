@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="CSS/one_page_website.css">
 </head>
 <body>
-		
-		<!-- NAV -->
+	<script src="./JS/one_page_website.js"></script>
+				<!-- NAV -->
 		<div>
 			<div>
 				<ul>
@@ -32,31 +32,67 @@
 			<div id="flavors">
 				<h2>Flavors</h2>
 			</div>
-				<div class="gallery">
-  <a target="_blank" href="onepage2.jpeg">
-    <img src="onepage2.jpeg" alt="" width="200" height="200">
-  </a>
   <div class="desc">Summer Juices!</div>
 </div>
-<div class="gallery">
-  <a target="_blank" href="onepage3.jpeg">
-    <img src="onepage3.jpeg" alt="" width="200" height="200">
-  </a>
-  <div class="desc">Winter Juices!</div>
-</div>
-<div class="gallery">
-  <a target="_blank" href="onepage4.jpeg">
-    <img src="onepage4.jpeg" alt="" width="200" height="200">
-  </a>
-  <div class="desc">Fall Juices!</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="onepage5.jpeg">
-    <img src="onepage5.jpeg" alt="" width="200" height="200">
-  </a>
-  <div class="desc">Spring Juices!</div>
-</div> 
+<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="/Images/onepage5.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="/Images/onepage1.jpeg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="/Images/onepage2.jpeg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="/Images/onepage3.jpeg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="/Images/onepage4.jpeg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="/Images/onepage1.jpeg" onclick="currentSlide(1)" alt="Juice">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="/Images/onepage2.jpeg" onclick="currentSlide(2)" alt="Juice">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="/Images/onepage3.jpeg" onclick="currentSlide(3)" alt="Juice">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="/Images/onepage4.jpeg" onclick="currentSlide(4)" alt="Juice">
+	  </div>
+	</div>
+  </div> 
 
 	<div class="bottomleft">
 	<div id="contact">	
