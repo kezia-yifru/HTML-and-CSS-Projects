@@ -123,7 +123,9 @@ html {
   }
   
   img.demo {
-    opacity: 0.6;
+    opacity: 0.6; 
+    height: 50px;
+    width:50px;
   }
   
   .active,

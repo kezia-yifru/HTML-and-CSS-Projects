@@ -4,185 +4,87 @@
 	<head>
 		<title>Moss is Lyfe</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="/css.shared.css">
+		<link rel="stylesheet" href="/CSS/css.shared.css">
 		<link rel="stylesheet" href="Project/CSS/animation.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
-	<body>
-	<!-- NAV ---->
-	<div class="wrap">
-		<div class="menu-container">
-			<ul class="menu">
-				<a href="#HOME"><li>HOME</li></a>
-				<a href="#GALLERY"><li>GALLERY</li></a>
-				<a href="#CONTACT"><li>CONTACT US</li></a>
-			</ul>
+	<body> 
+		<script src="/JS.js/js.js"></script>
+		<script>
+			document.body.classList.add('fade-out'); 
+			window.addEventListener('DOMContentLoaded', () => {
+			document.body.classList.remove('fade-out'); 
+		  });
+		  </script>  
+	<!-- NAV ----> 
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Moss is Lyfe</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		  <div class="navbar-nav">
+			<a class="nav-item nav-link active" href="#HOME">Home<span class="sr-only">(current)</span></a>
+			<a class="nav-item nav-link" href="#GALLERY">Pics</a>
+			<a class="nav-item nav-link" href="#CONTACT">Let's link up!</a>
+		  </div>
 		</div>
-	</div>
+	  </nav>
 	<!--END NAV-->
 
-	<!--HOME-->
-	<div id="HOME">
+	<!--HOME--> 
+	<div id="HOME"></div>
+	<h1 style="font-size:10vw;">Moss is Lyfe!</h1>
 		<div class="container">
-			<div class="text-center">
-			<span class="head-main">Moss is Lyfe</span>		
+			<div class="text-center">	
 		</div>
 	</div>		
 </div>
 	<!--END HOME-->
 
 	<!--GALLERY-->
-	<section id="GALLERY">
-		<div class="container">
-			<h1>Gallery</h1>
-			<div class="flex-container">
-
-	<!-- PHOTO CONTAINER 1-->
-	<div class="photo-container">
-		<div class="photo">
-		<img src="./images/thumb/Thumb_1.jpeg" alt"" width="200" height="300">
-		<div class="photo-overlay">
-			<h3>Click to Enlarge</h3>
-			<p>These juices have many health benefits!</p>
-		</div>
-	</div>
-</div>
-	<!--END PHOTO CONTAINER 1-->
-
-		<!-- PHOTO CONTAINER 2-->
-		<div class="photo-container">
-			<div class="photo">
-			<img src="./images/thumb/Thumb_2.jpeg" alt"" width="200" height="300">
-			<div class="photo-overlay">
-				<h3>Click to Enlarge</h3>
-				<p>These juices have many health benefits!</p>
+	<div id= "GALLERY" class="gallery">
+		<div class="row">
+			<div class="column">
+			  <img src="/Images/Thumb/Thumb_1.jpeg" alt="Juice" style="width:100%">
 			</div>
-		</div>
-	</div>
-		<!--END PHOTO CONTAINER 2-->
-
-			<!-- PHOTO CONTAINER 3-->
-	<div class="photo-container">
-		<div class="photo">
-		<img src="./images/thumb/Thumb_3.jpeg" alt"" width="200" height="300">
-		<div class="photo-overlay">
-			<h3>Click to Enlarge</h3>
-			<p>These juices have many health benefits!</p>
-		</div>
-	</div>
-</div>
-	<!--END PHOTO CONTAINER 3-->
-
-		<!-- PHOTO CONTAINER 4-->
-		<div class="photo-container">
-			<div class="photo">
-			<img src="./images/thumb/Thumb_4.jpeg" alt"" width="200" height="300">
-			<div class="photo-overlay">
-				<h3>Click to Enlarge</h3>
-				<p>These juices have many health benefits!</p>
+			<div class="column">
+			  <img src="/Images/Thumb/Thumb_2.jpeg" alt="Juice" style="width:100%">
 			</div>
-		</div>
-	</div>
-		<!--END PHOTO CONTAINER 4-->
-
-			<!-- PHOTO CONTAINER 5-->
-	<div class="photo-container">
-		<div class="photo">
-		<img src="./images/thumb/Thumb_5.jpeg" alt"" width="200" height="300">
-		<div class="photo-overlay">
-			<h3>Click to Enlarge</h3>
-			<p>These juices have many health benefits!</p>
-		</div>
-	</div>
-</div>
-	<!--END PHOTO CONTAINER 5-->
-
-		<!-- PHOTO CONTAINER 6-->
-		<div class="photo-container">
-			<div class="photo">
-			<img src="./images/thumb/Thumb_6.jpeg" alt"" width="200" height="300">
-			<div class="photo-overlay">
-				<h3>Click to Enlarge</h3>
-				<p>These juices have many health benefits!</p>
+			<div class="column">
+			  <img src="/Images/Thumb/Thumb_3.jpeg" alt="Juice" style="width:100%">
 			</div>
-		</div>
-	</div>
-		<!--END PHOTO CONTAINER 6-->
-
-			<!-- PHOTO CONTAINER 7-->
-	<div class="photo-container">
-		<div class="photo">
-		<img src="./images/thumb/Thumb_7.jpeg" alt"" width="200" height="300">
-		<div class="photo-overlay">
-			<h3>Click to Enlarge</h3>
-			<p>These juices have many health benefits!</p>
-		</div>
-	</div>
-</div>
-	<!--END PHOTO CONTAINER 7-->
-
-		<!-- PHOTO CONTAINER 8-->
-		<div class="photo-container">
-			<div class="photo">
-			<img src="./images/thumb/Thumb_7.jpeg" alt"" width="200" height="300">
-			<div class="photo-overlay">
-				<h3>Click to Enlarge</h3>
-				<p>These juices have many health benefits!</p>
-			</div>
-		</div>
-	</div>
-		<!--END PHOTO CONTAINER 8-->
-
-			<!-- PHOTO CONTAINER 9-->
-	<div class="photo-container">
-		<div class="photo">
-		<img src="./images/thumb/Thumb_9.jpeg" alt"" width="200" height="300">
-		<div class="photo-overlay">
-			<h3>Click to Enlarge</h3>
-			<p>These juices have many health benefits!</p>
-		</div>
-	</div>
-</div>
-	<!--END PHOTO CONTAINER 9-->
+		  </div>	
 </section>
 	<!--END GALLERY-->
 
-	<!-- RSVP -->
-	<section id="CONTACT">
-		<div class="container">
-			<div class="heading-padding">
-				<h1 class="heading-padding">Contact Us</h1>
-				<div class="CONTACT">
-					<h2><span>Get Mossy</span>
-						<br>Get them before they run out!
-					</h2>
-					<p class="contact-text">
-						Reach out to us!
-					</p>
-					<div class="form-contact">
-						<form action="" method="post">
-							<input class="contact" type="text" value="" placeholder="First Name">
-							<input class="contact" type="text" value="" placeholder="Last Name">
-							<input class="contact" type="text" value="" placeholder="Email Adress">
-							<input class="contact" type="text" value="" placeholder="Phone Number">
-							<div class="form-spacer">
-								<label class="terms">Terms and Conditions</label>
-							</div>
-							<div class="submit">
-								<input type="submit" value="Submit">
-							</div>	
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--RSVP-->
-
-	<!--FOOTER-->
-	<div id="FOOTER">
+	<!-- CONTACT -->
+	<footer id="CONTACT">
+		<button class="open-button" onclick="openForm()">Let's Link Up!</button>
+	<div class="form-popup" id="myForm">
+				<form action="" onsubmit="return validateForm()" method="post" class="form-container">
+						  
+						<label for="name">what's your name?</label>
+						<input type="text" placeholder="first name" required>
+						
+						<label for="email">what's your email, dude?</label>
+						<input type="text" name="email" placeholder="email" required>
+						
+						<label for="phonenumber">digits please..</label> 
+						<input type="text" id="phonenumber"placeholder="digits">
+						 
+						<button type="submit" class="btn">Submit</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					  </form>	
+			</div> 
+		</div> 
+	</div> 
+		<!--CONTACT-->
+		<!--FOOTER-->
+		<div>
 		www.mossislyfe.com &nbsp;|&nbsp; &copy; 2020
-	</div>
-	<!-- END FOOTER-->
-
+		</div>
+		</footer>
+		<!-- END FOOTER-->
 	</body>
 </html>
