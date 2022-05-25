@@ -283,7 +283,7 @@ Contact STYLES
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color: #25493c;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -295,7 +295,7 @@ Contact STYLES
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color: black;
 }
 
 /* Add some hover effects to buttons */
@@ -342,4 +342,47 @@ FOOTER STYLES
     .container {
         width: 1170px
     }
+}  
+
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.single-featured-image-header img {
+	animation: zoominoutsinglefeatured 15s forwards;
 } 
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  }
+  
+  #slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+  }
+
+  .h1 {
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
